@@ -1,0 +1,213 @@
+/* 🌈 Global page background */
+body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  }
+  
+  /* Page container */
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  
+  /* Logout */
+  .logout-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .logout-btn:hover {
+    background: #dc2626;
+  }
+  
+  /* Welcome text */
+  .page p {
+    margin-bottom: 20px;
+    color: #4b5563;
+  }
+  
+  /* Card container */
+  .card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* -------- Add Expense Form -------- */
+  
+  .add-expense {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  .add-expense input,
+  .add-expense select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+  }
+  
+  .add-expense input:focus,
+  .add-expense select:focus {
+    outline: none;
+    border-color: #6366f1;
+  }
+  
+  .add-expense button {
+    grid-column: span 2;
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .add-expense button:hover {
+    background: #4f46e5;
+  }
+  
+  /* -------- Expense Chart -------- */
+  
+  .chart-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 24px 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  }
+  
+  .chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2937;
+  }
+  
+  .chart-wrapper {
+    width: 100%;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* -------- Expense List -------- */
+  
+  .expense-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 8px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .expense-item:last-child {
+    border-bottom: none;
+  }
+  
+  .expense-item:hover {
+    background: #f9fafb;
+  }
+  
+  .expense-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .expense-left strong {
+    font-size: 16px;
+    color: #111827;
+  }
+  
+  .expense-left span {
+    font-size: 13px;
+    color: #6b7280;
+  }
+  
+  /* Category badge */
+  .category-badge {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 999px;
+    background: #e0e7ff;
+    color: #3730a3;
+  }
+  
+  /* Actions */
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .actions button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .actions button:first-child {
+    background: #60a5fa;
+    color: white;
+  }
+  
+  .actions button:last-child {
+    background: #ef4444;
+    color: white;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .pagination button {
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
